@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+    <title>Music App</title>
+  </head>
+  <body>
+    <h1>Music Player</h1>
+
+    <div class="container">
+      <div class="music-info">
+        <h4 id="title"></h4>
+        <div class="progress-container">
+          <p id="progress"></p>
+        </div>
+      </div>
+
+      <audio src="" id="audio"></audio>
+
+      <div class="img-container">
+        <img src="" alt="img" class="music-img" />
+      </div>
+
+      <div class="navigation">
+        <button id="prev-btn">
+          <ion-icon name="play-back"></ion-icon>
+        </button>
+
+        <button id="play-btn">
+          <ion-icon name="play" class="play-icon"></ion-icon>
+        </button>
+
+        <button id="pause-btn" class="hide">
+          <ion-icon name="pause" class="pause-icon"></ion-icon>
+        </button>
+
+        <button id="next-btn">
+          <ion-icon name="play-forward"></ion-icon>
+        </button>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
